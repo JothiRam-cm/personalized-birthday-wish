@@ -15,9 +15,9 @@ interface WelcomeStageProps {
 }
 
 const NO_RESPONSES = [
-  "Are you sure? There are surprises waiting for you! 💗",
-  "Pretty please? I wrapped something really sweet for you! 🎀",
-  "Come on, peek just a little bit—you'll love it! ✨",
+  "Are you sure, Princess {name}? There are surprises waiting for you! 👸",
+  "Pretty please, my {name} fairy? I wrapped something really sweet for you! 🧚",
+  "Come on, peek just a little bit, Princess—you'll love it! 💙",
 ];
 
 export const WelcomeStage: React.FC<WelcomeStageProps> = ({
@@ -45,7 +45,7 @@ export const WelcomeStage: React.FC<WelcomeStageProps> = ({
         transition={{ duration: 0.55 }}
         className="font-handwritten font-bold text-4xl sm:text-6xl text-[#914B61] leading-tight text-balance mb-3"
       >
-        {config.greeting}, {config.recipientName} 🎀 💗
+        {config.greeting}, {config.recipientName} 👸💙
       </motion.h1>
 
       <motion.div

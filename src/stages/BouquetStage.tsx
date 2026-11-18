@@ -47,7 +47,7 @@ export const BouquetStage: React.FC<BouquetStageProps> = ({
         transition={{ duration: 0.5 }}
         className="font-serif-editorial font-semibold text-3xl sm:text-4xl text-[#914B61] text-center mb-6 sm:mb-10"
       >
-        Your Rose Bouquet 🌹
+        Your Princess Bouquet 💙🧚
       </motion.h2>
 
       <div className="w-full grid grid-cols-1 md:grid-cols-2 items-center gap-8 md:gap-10">

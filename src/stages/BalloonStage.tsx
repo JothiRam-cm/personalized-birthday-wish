@@ -79,7 +79,7 @@ export const BalloonStage: React.FC<BalloonStageProps> = ({
               className="flex flex-col items-center gap-3"
             >
               <p className="font-handwritten font-bold text-3xl sm:text-4xl text-[#914B61]">
-                &ldquo;{config.balloonWords.join(' ')}&rdquo; 💗
+                &ldquo;{config.balloonWords.join(' ')}&rdquo; 💙👸
               </p>
               <PrimaryButton
                 onClick={onNext}

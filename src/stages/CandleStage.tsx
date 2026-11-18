@@ -52,7 +52,7 @@ export const CandleStage: React.FC<CandleStageProps> = ({
           candleExtinguished && !wishMade ? 'text-[#FFF8E9]' : 'text-[#914B61]'
         }`}
       >
-        Blow the candle, {config.recipientName} 🎀 🎈
+        Blow the candle, {config.recipientName} 💙👸
       </h2>
       <p
         className={`mt-1.5 text-xs sm:text-sm transition-colors duration-700 ${
@@ -169,7 +169,7 @@ export const CandleStage: React.FC<CandleStageProps> = ({
               className="flex flex-col items-center gap-3"
             >
               <p className="font-handwritten font-bold text-3xl text-[#914B61]">
-                May every single wish come true 💗
+                May every single wish come true 💖
               </p>
               <PrimaryButton
                 onClick={onNext}

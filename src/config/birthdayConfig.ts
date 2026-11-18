@@ -1,23 +1,27 @@
 import { BirthdayConfig } from '../types/birthday';
 
-export const DEFAULT_LETTER_BODY = `Happy Birthday!
+export const DEFAULT_LETTER_BODY = `Happy Birthday Ammu💙🧚
 
-I hope this special day brings you endless happiness, beautiful memories and countless reasons to smile.
+Tnx for coming into my life and bringing so much happiness 😚
 
-You deserve all the love, kindness and wonderful things life has to offer.
+Naa unakaga edu varaikum edum pannathu illa... But enakaga nee avalo kasta paathuruka🥺...
 
-May every dream you hold close slowly become a beautiful reality.
+Naa nenachada vida nee en mela avalo pasam vacha😇... Ena avalo happy ah vachikita💞.... Even un veetula perachana apa kuda ena vittu pogama inai varaikum en mela evalo care edutu ena evalo happy ah paathukura🤗
 
-Never forget how special you are and how much happiness you bring into the lives of the people around you.
+Inum neraya sollite polam... Because nee enaku avalo panniruka🥹
 
-Keep smiling, keep shining and never stop being yourself.
+Yenna analum una vitura maten... Enaku needan nee matum dan🤌
 
-Wishing you a year filled with laughter, adventures, beautiful surprises and unforgettable moments.
+Ipadiye en kuda kadasi varaikum iru dii... Ena vitu poiratha🥺
 
-With lots of love ❤️`;
+Unaku naa irukan yaarum illa feel pannatha seriya...unna nalla paathupen🫂🤌
+
+Enaku kedaicha gem dii nee💎
+
+Once again happy birthday dii chellowww 💙🫂😘`;
 
 export const defaultBirthdayConfig: BirthdayConfig = {
-  recipientName: 'Samyuuu',
+  recipientName: 'Rubi(Ammu)',
   senderName: 'Your Special Someone',
   theme: {
     background: '#FFF7F8',
@@ -27,18 +31,37 @@ export const defaultBirthdayConfig: BirthdayConfig = {
     deepAccent: '#914B61',
   },
   greeting: 'Happy Birthday',
-  balloonWords: ['YOU', 'ARE', 'SO', 'SPECIAL'],
+  balloonWords: ['YOU', 'ARE', 'MY', 'EVERYTHING'],
   bouquetMessages: [
     'You make my world beautiful.',
-    'Happy Birthday, {name} ❤️',
+    'Happy Birthday, {name} 💙',
   ],
   letter: {
     heading: 'A Message From My Heart',
-    greeting: 'Dear {name} 🎀 💗,',
+    greeting: 'Dear Princess {name} 👸💙,',
     body: DEFAULT_LETTER_BODY,
   },
-  finalMessage: 'Lots of love for you ❤️',
-  keepsakePhotos: [],
+  finalMessage: 'Lots of love for you 💙',
+  keepsakePhotos: [
+    {
+      id: 'memory-1',
+      title: 'Cherished Memory 1',
+      dataUrl: '/assets/WhatsApp%20Image%202026-11-18%20at%2011.47.02%20PM.jpeg',
+      caption: 'Our special moment',
+    },
+    {
+      id: 'memory-2',
+      title: 'Cherished Memory 2',
+      dataUrl: '/assets/WhatsApp%20Image%202026-11-18%20at%2011.47.03%20PM.jpeg',
+      caption: 'My favorite smile',
+    },
+    {
+      id: 'memory-3',
+      title: 'Cherished Memory 3',
+      dataUrl: '/assets/WhatsApp%20Image%202026-11-18%20at%2011.47.03%20PM%20(1).jpeg',
+      caption: 'Together forever',
+    },
+  ],
   enableMicrophone: true,
   enableMusic: false,
   enableSharing: true,

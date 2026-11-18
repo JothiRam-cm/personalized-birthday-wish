@@ -115,7 +115,7 @@ export const FinalStage: React.FC<FinalStageProps> = ({ config, onReplay }) => {
         transition={{ duration: 0.55, delay: 0.2 }}
         className="font-handwritten font-bold text-4xl sm:text-5xl text-[#914B61] leading-tight text-balance mt-3"
       >
-        Once Again, Happy Birthday {config.recipientName} 🎀 💗
+        Once Again, Happy Birthday {config.recipientName} 🎀 💖
       </motion.h2>
 
       {/* Optional Keepsake Photo Memories (preserved clean when empty) */}

@@ -1,0 +1,192 @@
+@import "tailwindcss";
+
+:root {
+  --bg-blush: #fff7f8;
+  --bg-blush-secondary: #fff1f4;
+  --pink-primary: #efa9b8;
+  --rose-dusty: #c8758b;
+  --rose-deep: #914b61;
+  --ink-primary: #684650;
+  --ink-secondary: #a27b84;
+  --pastel-lavender: #e8dff6;
+  --pastel-mint: #e4f0e5;
+  --cream-soft: #fff8e9;
+  --border-blush: #eed8de;
+}
+
+@layer base {
+  html,
+  body {
+    background-color: var(--bg-blush);
+    color: var(--ink-primary);
+    font-family: "Nunito", ui-sans-serif, system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+.font-handwritten {
+  font-family: "Dancing Script", "Brush Script MT", cursive;
+}
+
+.font-serif-editorial {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+}
+
+.font-rounded {
+  font-family: "Nunito", ui-sans-serif, system-ui, -apple-system, sans-serif;
+}
+
+/* Soft storybook shadows */
+.shadow-card-soft {
+  box-shadow:
+    0 14px 36px -14px rgba(145, 75, 97, 0.16),
+    0 4px 12px -4px rgba(200, 117, 139, 0.1);
+}
+
+.shadow-btn-rose {
+  box-shadow:
+    0 8px 20px -6px rgba(200, 117, 139, 0.35),
+    0 2px 6px -2px rgba(145, 75, 97, 0.15);
+}
+
+/* Gentle ambient float animations */
+@keyframes floatSlow {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(2deg);
+  }
+}
+
+@keyframes floatHeartUp {
+  0% {
+    transform: translateY(105vh) translateX(0px) scale(0.75) rotate(-6deg);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.45;
+  }
+  100% {
+    transform: translateY(-12vh) translateX(18px) scale(1.05) rotate(8deg);
+    opacity: 0;
+  }
+}
+
+@keyframes driftSparkle {
+  0%,
+  100% {
+    transform: scale(0.7) rotate(0deg);
+    opacity: 0.25;
+  }
+  50% {
+    transform: scale(1.15) rotate(20deg);
+    opacity: 0.8;
+  }
+}
+
+.animate-float-slow {
+  animation: floatSlow 5.5s ease-in-out infinite;
+}
+
+.animate-float-heart {
+  animation: floatHeartUp var(--float-duration, 16s) linear infinite;
+  animation-delay: var(--float-delay, 0s);
+}
+
+.animate-sparkle-twinkle {
+  animation: driftSparkle var(--twinkle-duration, 4s) ease-in-out infinite;
+  animation-delay: var(--twinkle-delay, 0s);
+}
+
+/* Official Google Sign-In button styling */
+.gsi-material-button {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -webkit-appearance: none;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #d9c4cb;
+  border-radius: 9999px;
+  box-sizing: border-box;
+  color: #3c2a30;
+  cursor: pointer;
+  font-family: "Nunito", Roboto, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  height: 42px;
+  letter-spacing: 0.01em;
+  outline: none;
+  overflow: hidden;
+  padding: 0 18px;
+  position: relative;
+  text-align: center;
+  transition: background-color 0.2s, border-color 0.2s, box-shadow 0.2s;
+  vertical-align: middle;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gsi-material-button:hover {
+  box-shadow: 0 4px 12px rgba(145, 75, 97, 0.14);
+  background-color: #fff9fa;
+  border-color: #c8758b;
+}
+
+.gsi-material-button:focus-visible {
+  outline: 2px solid #c8758b;
+  outline-offset: 2px;
+}
+
+.gsi-material-button:disabled {
+  cursor: default;
+  opacity: 0.6;
+}
+
+.gsi-material-button-content-wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 100%;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  gap: 10px;
+}
+
+.gsi-material-button-icon {
+  height: 18px;
+  width: 18px;
+  min-width: 18px;
+}
+
+/* 3D envelope perspective helper */
+.perspective-1200 {
+  perspective: 1200px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-float-slow,
+  .animate-float-heart,
+  .animate-sparkle-twinkle {
+    animation: none !important;
+  }
+}

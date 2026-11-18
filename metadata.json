@@ -1,0 +1,6 @@
+{
+  "name": "Personalized Birthday Wish",
+  "description": "An interactive seven-stage pastel birthday storybook with 3D surprises, candle wish, heartfelt letter, and Google Drive keepsake sync.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": []
+}
